@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support | Ghana Travel Explorer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="support">
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <header class="doc-title">
+      <h1>Support</h1>
+      <p class="subtitle">We're here to help</p>
+    </header>
+
+    <main class="support-body">
+      <section class="faq">
+        <h2>Common Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">How do I plan a trip?</button>
+          <p class="faq-answer">
+            Open the Trip Planner, give your trip a name, choose your dates,
+            travellers and budget, tick the places you want to visit, and click
+            Create Trip.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Where are my trips saved?</button>
+          <p class="faq-answer">
+            Your trips are saved in your own browser on this device. If you
+            clear your browsing data or switch to another device, they will not
+            be there.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I change a trip after creating it?
+          </button>
+          <p class="faq-answer">
+            Not yet. For now you can delete a trip and create a new one with the
+            right details.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I suggest a new place?</button>
+          <p class="faq-answer">
+            Yes. Send us a message below, choose the Explore topic, and tell us
+            which place you would like to see.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Send Us a Message</h2>
+
+        <form id="support-form">
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="e.g. Ama Mensah" />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="e.g. ama@example.com" />
+
+          <label for="topic">Topic</label>
+          <select id="topic">
+            <option value="">Choose a topic</option>
+            <option value="Trip Planner">Trip Planner</option>
+            <option value="Explore">Explore</option>
+            <option value="Did You Know">Did You Know</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="How can we help?"
+          ></textarea>
+
+          <p id="support-message" class="form-message"></p>
+          <button type="submit" class="btn-plan">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="../js/support.js"></script>
+  </body>
+</html>

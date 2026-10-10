@@ -493,3 +493,109 @@ body.planner .saved-trips {
 .form-message {
   color: #c0392b;
 }
+/* Support page */
+body.support {
+  min-height: 100vh;
+  padding: 30px 20px 80px;
+  background-color: #f5f5f2;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body.support .back-link {
+  color: #222;
+}
+
+body.support .doc-title h1 {
+  color: #222;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+body.support .subtitle {
+  color: #222;
+}
+
+.support-body {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.support-body h2 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+}
+
+/* Questions */
+.faq {
+  margin-bottom: 70px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+  background: none;
+  border: none;
+  color: #222;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question::after {
+  content: "+";
+  float: right;
+  font-size: 1.4rem;
+}
+
+.faq-item.open .faq-question::after {
+  content: "\2212";
+}
+
+.faq-question:hover {
+  opacity: 0.7;
+}
+
+.faq-answer {
+  display: none;
+  padding-bottom: 18px;
+  line-height: 1.7;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+/* Form */
+#support-form label {
+  display: block;
+  margin: 20px 0 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+#support-form input,
+#support-form select,
+#support-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: white;
+  border: 1px solid #bbb;
+  color: #222;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+
+#support-form textarea {
+  resize: vertical;
+}
