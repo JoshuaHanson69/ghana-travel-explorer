@@ -347,3 +347,149 @@ body.explore {
     margin-bottom: 25px;
   }
 }
+/* Trip Planner */
+body.planner {
+  min-height: 100vh;
+  padding: 30px 20px 80px;
+  background-color: #2b2b2b;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.planner-body {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#trip-form label {
+  display: block;
+  margin: 20px 0 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+#trip-form input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-size: 1rem;
+  color-scheme: dark;
+}
+
+#trip-form .row {
+  display: flex;
+  gap: 20px;
+}
+
+#trip-form .row > div {
+  flex: 1;
+}
+
+.place-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.place-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.place-options input {
+  width: auto;
+}
+
+.form-message {
+  min-height: 24px;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  color: #ff8a8a;
+}
+
+.btn-plan {
+  margin-top: 10px;
+  padding: 14px 40px;
+  background-color: white;
+  border: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn-plan:hover {
+  opacity: 0.8;
+}
+
+.saved-trips {
+  margin-top: 70px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.saved-trips h2 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  #trip-form .row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+/* Trip Planner: light version */
+body.planner {
+  background-color: #f5f5f2;
+  color: #222;
+}
+
+body.planner .back-link {
+  color: #222;
+}
+
+body.planner .doc-title h1 {
+  color: #222;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+body.planner .subtitle {
+  color: #222;
+}
+
+#trip-form input {
+  background-color: white;
+  border: 1px solid #bbb;
+  color: #222;
+  color-scheme: light;
+}
+
+.btn-plan {
+  background-color: #222;
+  color: white;
+}
+
+body.planner .saved-trips {
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-message {
+  color: #c0392b;
+}

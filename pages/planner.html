@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Planner | Ghana Travel Explorer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="planner">
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <header class="doc-title">
+      <h1>Trip Planner</h1>
+      <p class="subtitle">Plan your journey across Ghana</p>
+    </header>
+
+    <main class="planner-body">
+      <form id="trip-form">
+        <label for="trip-name">Trip name</label>
+        <input
+          type="text"
+          id="trip-name"
+          placeholder="e.g. December in Cape Coast"
+        />
+
+        <div class="row">
+          <div>
+            <label for="start-date">Start date</label>
+            <input type="date" id="start-date" />
+          </div>
+          <div>
+            <label for="end-date">End date</label>
+            <input type="date" id="end-date" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="travellers">Travellers</label>
+            <input type="number" id="travellers" min="1" value="1" />
+          </div>
+          <div>
+            <label for="budget">Total budget (GHS)</label>
+            <input type="number" id="budget" min="0" placeholder="e.g. 2000" />
+          </div>
+        </div>
+
+        <label>Places to visit</label>
+        <div id="place-options" class="place-options"></div>
+
+        <p id="form-message" class="form-message"></p>
+        <button type="submit" class="btn-plan">Create Trip</button>
+      </form>
+
+      <section class="saved-trips">
+        <h2>Your Trips</h2>
+        <div id="trip-list"></div>
+      </section>
+    </main>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/planner.js"></script>
+  </body>
+</html>
