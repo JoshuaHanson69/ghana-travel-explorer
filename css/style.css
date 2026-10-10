@@ -9,7 +9,6 @@ body {
   line-height: 1.6;
   color: white;
 }
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -18,46 +17,44 @@ body {
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #004d2c, #006b3f 60%, #0a3d62);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                    url("../images/independence.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
   font-size: 3.5rem;
-  color: #fcd116;
+  color: #ffffff;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero p {
   margin: 15px 0 40px;
   font-size: 1.2rem;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .menu-box {
   width: 160px;
   padding: 30px 20px;
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: #ffffff;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #222;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .menu-box:hover {
-  background-color: #fcd116;
-  color: #222;
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Inner pages */
 /* Documentary pages */
