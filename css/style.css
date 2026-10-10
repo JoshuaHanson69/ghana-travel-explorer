@@ -207,7 +207,7 @@ body.doc {
 /* Castles page background */
 body.doc.castles {
   background-image: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)),
-                    url("../images/castle.webp");
+                    url("../images/capecoast.webp");
 }
 
 /* Previous / Next links */
@@ -306,4 +306,44 @@ body.explore {
 
 .tile:hover {
   transform: scale(1.03);
+}
+/* Search box, top right */
+body.explore {
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 420px;
+}
+
+#search {
+  width: 100%;
+  padding: 14px 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 1rem;
+}
+
+#search::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* On small screens, put it back above the tiles */
+@media (max-width: 800px) {
+  .controls {
+    position: static;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
